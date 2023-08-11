@@ -10,7 +10,7 @@ $msg = "";
 if (isset($_POST['submit'])) {
     $folder = "../lessons/song/tabs/" . basename($_FILES['image']['name']);
 
-    $db = mysqli_connect("localhost", "root", "", "db_ms");
+    $db = mysqli_connect("localhost", "root", "", "music");
     $image = $_FILES['image']['name'];
     $title = $_POST['title'];
     $text = $_POST['text'];
@@ -33,6 +33,7 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,13 +64,13 @@ if (isset($_POST['submit'])) {
             text-decoration: underline;
         }
 
-        .songtab form{
+        .songtab form {
             position: absolute;
             top: 40%;
             left: 52%;
         }
 
-        .songtab input{
+        .songtab input {
             margin-bottom: 10px;
         }
 
@@ -80,7 +81,7 @@ if (isset($_POST['submit'])) {
             color: #f0f0f0;
         }
 
-        p{
+        p {
             position: absolute;
             top: 6%;
             font-size: 14px;
@@ -89,11 +90,11 @@ if (isset($_POST['submit'])) {
             font-weight: 500;
         }
 
-        input[type=text]{
+        input[type=text] {
             width: 206px;
         }
 
-        input[type=submit]{
+        input[type=submit] {
             width: 120px;
             height: 40px;
             border-radius: 22px;
@@ -106,13 +107,14 @@ if (isset($_POST['submit'])) {
             left: 16%;
         }
 
-        input[type=submit]:hover{
+        input[type=submit]:hover {
             background-color: #66ccff;
             color: black;
             cursor: pointer;
         }
     </style>
 </head>
+
 <body>
     <?php
     include 'nav.php';
@@ -134,4 +136,5 @@ if (isset($_POST['submit'])) {
         </form>
     </div>
 </body>
+
 </html>

@@ -4,7 +4,7 @@ $msg = "";
 session_start();
 $id = $_SESSION['Id'];
 
-include '../admin/CRUD/connection.php';
+include '../admin/crud/connection.php';
 if (isset($_POST['submit'])) {
     $password_new = md5($_POST['pass']);
     $password_confirm = md5($_POST['passcf']);
@@ -25,6 +25,7 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Change Password</title>
@@ -103,6 +104,7 @@ if (isset($_POST['submit'])) {
         }
     </style>
 </head>
+
 <body>
     <?php
     include '../include/profilenav.php';
@@ -134,4 +136,5 @@ if (isset($_POST['submit'])) {
         </table>
     </form>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../admin/CRUD/connection.php';
+include '../admin/crud/connection.php';
 if (!isset($_SESSION['login'])) {
     header('location:../index.php');
     exit;
@@ -10,7 +10,7 @@ $msg = "";
 if (isset($_POST['submit'])) {
     $folder = "../userdp/" . basename($_FILES['image']['name']);
 
-    $db = mysqli_connect("localhost", "root", "", "db_ms");
+    $db = mysqli_connect("localhost", "root", "", "music");
     $image = $_FILES['image']['name'];
 
     $file_ext = explode('.', $image);
@@ -33,6 +33,7 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -116,6 +117,7 @@ if (isset($_POST['submit'])) {
         }
     </style>
 </head>
+
 <body>
     <?php
     include '../include/profilenav.php';
@@ -138,4 +140,5 @@ if (isset($_POST['submit'])) {
         </form>
     </div>
 </body>
+
 </html>

@@ -2,7 +2,7 @@
 $msg = "";
 session_start();
 if (isset($_POST['submit'])) {
-    $db = mysqli_connect("localhost", "root", "", "db_ms");
+    $db = mysqli_connect("localhost", "root", "", "music");
 
     $email = $_POST['email'];
 
@@ -20,6 +20,7 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +30,7 @@ if (isset($_POST['submit'])) {
     <script src="js/forgot.js"></script>
     <link rel="shortcut icon" href="admin/images/forgot.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="container">
         <h2>Forgot Password:</h2>
@@ -42,4 +44,5 @@ if (isset($_POST['submit'])) {
         </form>
     </div>
 </body>
+
 </html>

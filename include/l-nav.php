@@ -1,5 +1,5 @@
 <?php
-include 'admin/CRUD/connection.php';
+include 'admin/crud/connection.php';
 
 $email = $_SESSION['email'];
 $sql = "SELECT * FROM users WHERE Email = '$email'";
@@ -12,26 +12,17 @@ if (mysqli_num_rows($result) == 1) {
     $_SESSION['Profile'] = $row['Profile'];
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
     <link rel="stylesheet" href="css/l-nav.css">
     <link rel="shortcut icon" href="../admin/images/L.png" type="image/x-icon">
     <script type="text/javascript" src="../js/nav.js"></script>
     <script src="https://kit.fontawesome.com/cacd88a93b.js" crossorigin="anonymous"></script>
-
-<body>
     <nav>
         <a href=""><img src="admin/images/logo.png"></a>
         <div id="nav_links" class="links">
             <i class="fa fa-times" onclick="hide()"></i>
             <ul>
                 <li><a href="lessons.php">Lessons</a></li>
-                <li onclick="display()"><img src="<?php echo 'userdp/' .$_SESSION['Profile']; ?>" alt="No image"></li>
+                <li onclick="display()"><img src="<?php echo 'userdp/' . $_SESSION['Profile']; ?>" alt="No image"></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="show()"></i>
@@ -39,25 +30,25 @@ if (mysqli_num_rows($result) == 1) {
         <div class="container" id="user_profile">
             <?php
             $userid = $_SESSION['Id'];
-            
+
             $query = "SELECT Profile FROM users WHERE Id = $userid";
             $query_run = mysqli_query($conn, $query);
             $result = mysqli_num_rows($query_run);
             if (!$result == 0) {
                 while ($row = mysqli_fetch_array($query_run)) {
             ?>
-                    <img src="<?php echo 'userdp/' .$_SESSION['Profile']; ?>" alt="No image">
-            <?php
+                    <img src="<?php echo 'userdp/' . $_SESSION['Profile']; ?>" alt="No image">
+        <?php
                 }
             }
         }
-            ?>
-            <div class="info">
-                <h1>Username: <?php echo $_SESSION['Name']; ?></h1>
-                <h1>Email: <?php echo $_SESSION['Email']; ?></h1>
-                <button onclick="location.href='CRUD/logout.php'" class="logout">LOGOUT</button>
-                <a href="CRUD/manage_profile.php">Manage profile settings</a>
-            </div>
+        ?>
+        <div class="info">
+            <h1>Username: <?php echo $_SESSION['Name']; ?></h1>
+            <h1>Email: <?php echo $_SESSION['Email']; ?></h1>
+            <button onclick="location.href='CRUD/logout.php'" class="logout">LOGOUT</button>
+            <a href="CRUD/manage_profile.php">Manage profile settings</a>
+        </div>
         </div>
     </nav>
 
@@ -81,5 +72,3 @@ if (mysqli_num_rows($result) == 1) {
             }
         }
     </script>
-</body>
-</html>

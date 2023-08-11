@@ -1,6 +1,6 @@
 <?php
 $conn = mysqli_connect("localhost", "root", "");
-$db = mysqli_select_db($conn, 'db_ms');
+$db = mysqli_select_db($conn, 'music');
 
 $query = "SELECT * FROM guitarlessons WHERE Id=8";
 $query_run = mysqli_query($conn, $query);

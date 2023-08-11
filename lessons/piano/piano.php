@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/piano.css">
     <link rel="shortcut icon" href="../../admin/images/music-piano-icon--10.png" type="image/x-icon">
 </head>
+
 <body id="top">
     <?php
     include 'pnav.php';
@@ -193,7 +195,7 @@
         Fingering: 1-2-3-1-2-3-4-5
         </pre>
     </div>
-    
+
     <div class="part1">
         <h1>PART 3: MUSIC THEORY</h1>
         <img src="images/fur-elise-1536x396.png" alt="No image found">
@@ -241,4 +243,5 @@
         <br><br><br>
     </div>
 </body>
+
 </html>

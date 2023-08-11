@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$login = true;
 		session_start();
 		$_SESSION['Id'] = $row['Id'];
-        $_SESSION['email'] = $row['Email'];
+		$_SESSION['email'] = $row['Email'];
 		$_SESSION['login'] = true;
 		header('location:lessons.php');
 	} else {
@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sign In</title>
@@ -36,7 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<link rel="stylesheet" type="text/css" href="css/signin.css">
 	<link rel="shortcut icon" href="admin/images/ms.jpg" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/cacd88a93b.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
 	<div class="box">
 		<form method="post">
@@ -81,11 +84,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				<tr>
 					<td>
 						<center>
-							<a href="signup.html" class="b">Create one</a>
+							<a href="signup.php" class="b">Create one</a>
 					</td>
 				</tr>
 			</table>
 		</form>
 	</div>
 </body>
+
 </html>

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music_Scales</title>
+    <title>Music Scales | Follow your passion in Music</title>
     <link rel="shortcut icon" href="admin/images/ms.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
     <?php
-    include 'include/nav.html';
+    include 'include/nav.php';
     ?>
 
     <div class="header">
@@ -20,8 +23,8 @@
                 <br>wanna progress on your music then look no further.
                 <br>MS provides guidance for all of the pasionate musicians.
             </p>
-            <a href="signup.html" class="btn">Create Account</a>
-            <p class="below">LOGIN to access Lessons for FREE. <br> New Member ??? Create an Account And Start LEARNING Today.</p>
+            <a href="signup.php" class="btn btn-primary">Create Account</a>
+            <p class="below">LOGIN to access Lessons for FREE. <br> New Member? Create an Account And Start LEARNING Today.</p>
         </div>
     </div>
 
@@ -31,11 +34,15 @@
             <br>the videos & exercises that are included within the lessons.
         </p>
         <div class="row">
-            <div class="lessons">
+            <div class="lessons shadow-sm">
                 <h2>Video Tutorial</h3>
                     <p>In videos, we'll demonstrate techniques and the way we can play the musical instruments. You can simply follow the steps that are shown in the video.</p>
             </div>
-            <div class="lessons">
+            <div class="lessons shadow-sm">
+                <h2>Exercises</h3>
+                    <p>Exercises will help you Improve your Skills. If you Practice these exercises Regularly, you will notice an Improvement in your Speed, Accuracy.</p>
+            </div>
+            <div class="lessons shadow-sm">
                 <h2>Exercises</h3>
                     <p>Exercises will help you Improve your Skills. If you Practice these exercises Regularly, you will notice an Improvement in your Speed, Accuracy.</p>
             </div>
@@ -50,19 +57,19 @@
         </p>
         <div class="row">
             <div class="popular">
-                <img src="admin/images/guitar.jpg">
+                <img class="rounded" src="admin/images/guitar.jpg">
                 <div class="layer">
                     <h2>GUITAR</h2>
                 </div>
             </div>
             <div class="popular">
-                <img src="admin/images/ol.jpg">
+                <img class="rounded" src="admin/images/ol.jpg">
                 <div class="layer">
                     <h2>SONG TUTORIALS</h2>
                 </div>
             </div>
             <div class="popular">
-                <img src="admin/images/piano.jpg">
+                <img class="rounded" src="admin/images/piano.jpg">
                 <div class="layer">
                     <h2>PIANO</h2>
                 </div>
@@ -77,17 +84,17 @@
         </p>
         <div class="row">
             <div class="services">
-                <img src="admin/images/online.jpg">
+                <img class="shadow-sm" src="admin/images/online.jpg">
                 <h2>Online Lessons</h2>
                 <p>Music Scales helps you learn music. Engage yourself with our lessons that allows you to learn at your own pace.</p>
             </div>
             <div class="services">
-                <img src="admin/images/musictheory.png">
+                <img class="shadow-sm" src="admin/images/musictheory.png">
                 <h2>Music Theory</h2>
                 <p>Explore music Theory with the help of Music Scales along with proper Visualizations that are included within the Lessons.</p>
             </div>
             <div class="services">
-                <img src="admin/images/songtutorials.jpg">
+                <img class="shadow-sm" src="admin/images/songtutorials.jpg">
                 <h2>Song Tutorials</h2>
                 <p>Learn how to play songs on Guitar. Choose any songs and start playing. You can even Request the songs that you want to learn.</p>
             </div>
@@ -104,5 +111,7 @@
         include 'include/footer.html';
         ?>
     </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
