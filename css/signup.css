@@ -1,0 +1,171 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: url(../admin/images/signup.jpg);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#amsg {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 5px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.box {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  border-radius: 35px;
+  width: 420px;
+  height: 685px;
+  background: white;
+  box-shadow: 0 20px 30px black;
+}
+
+.box h2 {
+  font-size: 40px;
+}
+
+#bmsg {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 5px;
+}
+
+form {
+  position: relative;
+  width: 250px;
+  height: 100%;
+  padding: 10px 0px;
+}
+
+h2 {
+  width: 100%;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 5px solid grey;
+}
+
+label {
+  display: block;
+  width: 260px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.U {
+  padding-top: 15px;
+}
+
+input {
+  align-content: center;
+  background: none;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+
+button {
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cmsg {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 5px;
+}
+
+.agree {
+  font-weight: 500;
+  text-align: center;
+}
+
+.su {
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 40px;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.su {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  transition: 0.5s;
+  background: #4ea4dd;
+  border: 1px solid black;
+}
+
+.su:hover {
+  background: #66ccff;
+  color: black;
+}
+
+p {
+  font-weight: 500;
+}
+
+.signin {
+  text-decoration: none;
+  margin-top: 15px;
+  color: blueviolet;
+  transition: 0.5s;
+}
+
+.signin:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#dmsg {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 5px;
+}

@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../admin/images/main.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.main {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.main p {
+  margin: 10px 0 40px;
+  font-size: 26px;
+  color: white;
+}
+
+.btn {
+  transition: 0.5s;
+  border-radius: 20px;
+  padding: 8px 30px;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid white;
+  background: #66ccff;
+  color: black;
+}
+
+.main .below {
+  margin-top: 40px;
+}
+
+.lessons_we_offer {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.lessons_we_offer h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.lessons_we_offer p {
+  font-size: 22px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lessons {
+  flex-basis: 30%;
+  background: #e7feff;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  box-shadow: 0 0 12px 0px;
+}
+
+.lessons h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.ptopics {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.ptopics h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.ptopics p {
+  font-size: 22px;
+  padding: 10px;
+}
+
+.popular {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.popular img {
+  display: block;
+  width: 100%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+.layer:hover {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.layer h2 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 22px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.layer:hover h2 {
+  bottom: 50%;
+  opacity: 1;
+}
+
+.our_services {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.our_services h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.our_services p {
+  font-size: 22px;
+  padding: 10px;
+}
+
+.services {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.services:hover img {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.services img {
+  box-shadow: 0 0 12px 0px;
+  transition: 0.4s;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.services h2 {
+  text-decoration: underline;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.services p {
+  font-size: 22px;
+  padding: 0;
+}
+
+.contact {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../admin/images/contact.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.contact h1 {
+  color: white;
+  margin-bottom: 35px;
+  padding: 0;
+  font-weight: 500;
+}
+
+.cbtn {
+  border-radius: 20px;
+  padding: 8px 30px;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cbtn:hover {
+  border: 2px solid white;
+  background: #66ccff;
+  color: black;
+}
+
+/*MEDIA-QUERIES*/
+@media (max-width: 1280px) {
+  .ptopics {
+    margin: auto;
+    width: 66%;
+    display: block;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .contact h1 {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+}
+
+body {
+  background-color: #e8edf2;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  padding: 30px;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 50px 50px -50px darkslategray;
+}
+
+.myform {
+  margin-right: 30px;
+  width: 270px;
+}
+
+.myform h2 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.myform input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+  padding: 16px 0;
+}
+
+.myform button {
+  align-content: center;
+  display: block;
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  background: #4ea4dd;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.myform button:hover {
+  cursor: pointer;
+  background: #66ccff;
+  color: black;
+}
+
+.image img {
+  border-radius: 22px;
+}
+
+.error {
+  font-size: 14px;
+  font-weight: 500;
+  color: red;
+}
+
+.error_msg {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: red;
+  border-radius: 22px;
+  color: white;
+  padding: 5px 0px 5px 60px;
+}

@@ -1,0 +1,149 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  padding-top: 65px;
+  display: flex;
+  justify-content: center;
+  background: url(../admin/images/signin.jpeg);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  border-radius: 35px;
+  width: 420px;
+  height: 590px;
+  background: white;
+  box-shadow: 0 20px 30px black;
+}
+
+form {
+  position: relative;
+  width: 250px;
+  height: 100%;
+  padding: 10px 0px;
+}
+
+h2 {
+  padding-top: 20px;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 5px solid grey;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  width: 260px;
+  margin: 10px auto;
+  padding-top: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#amsg {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+
+button {
+  align-content: center;
+  display: block;
+  margin: auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+}
+
+.submit {
+  transition: 0.5s;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  background: #4ea4dd;
+  border: 1px solid black;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background: #66ccff;
+  color: black;
+}
+
+.a {
+  text-decoration: none;
+  align-content: center;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: blueviolet;
+  transition: 0.5s;
+}
+
+.a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.b {
+  align-content: center;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: blueviolet;
+  transition: 0.5s;
+}
+
+.b:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#bmsg {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 5px;
+}

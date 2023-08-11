@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.heading {
+  background-color: gainsboro;
+  height: 170px;
+  width: 100%;
+}
+
+.heading h1 {
+  padding: 20px 90px;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.heading .fa {
+  padding-left: 90px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #4ea4dd;
+  text-decoration: underline;
+}
+
+.heading .fb {
+  padding-right: 300px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.heading button {
+  margin-left: 40px;
+  background: transparent;
+  padding: 10px;
+  width: 180px;
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.heading .ba {
+  background-color: #4ea4dd;
+}
+
+.heading button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.lesson h1 {
+  font-size: 32px;
+  font-weight: 500;
+  padding-top: 40px;
+  margin-left: 110px;
+  margin-bottom: 30px;
+}
+
+.lesson .ba {
+  padding-bottom: 30px;
+}
+
+.lesson p {
+  margin: 10px 120px;
+  width: 1024px;
+  font-size: 18px;
+}
+
+.lesson .v {
+  padding-top: 50px;
+}
+
+.lesson .op {
+  margin-left: 170px;
+}
+
+.lesson button {
+  width: 50%;
+  margin-left: 240px;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  background-color: #4ea4dd;
+}
+
+.lesson button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
